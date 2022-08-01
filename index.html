@@ -3,36 +3,40 @@
     <head>
         <meta charset="utf-8">
         <title>Calculator</title>
-        <script src="./script.js"></script>
+        <script src="./script.js" defer></script>
         <link rel="stylesheet" href="./styles.css"></link>
     </head>
     
     <body>
         <div class="calc-container">
-            <div id="display">Test</div>
+            <div id="display"></div>
 
             <div class="btn-grid">
-                <button>C</button>
-                <button>&lt;-</button>
+                <button id="clear">C</button>
+
+                <!--Backspace button-->
+                <button id="backspace">&#x232B;</button>
 
                 <!--Negation button-->               
-                <button>&#8314;&#8725;&#8331;</button>
+                <button id="negate">&#8314;&#8725;&#8331;</button>
 
                 <button class="operator">-</button>
-                <button>1</button>
-                <button>2</button>
-                <button>3</buttosn>                
+                <button class="num-btn">1</button>
+                <button class="num-btn">2</button>
+                <button class="num-btn">3</button>
                 <button class="operator">+</button>
-                <button>4</button>
-                <button>5</button>
-                <button>6</button>                
+                <button class="num-btn">4</button>
+                <button class="num-btn">5</button>
+                <button class="num-btn">6</button> 
                 <button class="operator">×</button>
-                <button>7</button>
-                <button>8</button>
-                <button>9</button>                
+                <button class="num-btn">7</button>
+                <button class="num-btn">8</button>
+                <button class="num-btn">9</button>    
                 <button class="operator">÷</button>
-                <button>0</button>
-                <button>.</button>
+                <button class="num-btn">0</button>
+                <button class="num-btn">.</button>
+
+                <!--Equals button-->   
                 <button id="equals">=</button>                
             </div>
 
